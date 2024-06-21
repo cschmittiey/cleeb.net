@@ -19,12 +19,12 @@ title = "Blog posts"
 url = "/blogs"
 weight = 1
 
-[[Menus.main]]
-identifier = "gallery"
-name = "Gallery"
-title = "Blog posts"
-url = "/gallery"
-weight = 2
+# [[Menus.main]]
+# identifier = "gallery"
+# name = "Gallery"
+# title = "Blog posts"
+# url = "/gallery"
+# weight = 2
 
 [params]
 title = "Cleeb!"
@@ -142,11 +142,36 @@ I am a DevSecOps Engineer with an interest in building secure, reliable systems.
 
     [[params.experience.items]]
     job = "Helpdesk Technician"
-    company = "Autonomous Solutions, Inc."
+    company = "Autonomous Solutions Inc"
     companyUrl = "https://asirobots.com"
     date = "Nov 2020 - Mar 2021"
     content = """
-cleebed all over
+• Worked with end-users to reach satisfactory resolutions to helpdesk tickets
+
+• Developed scripts and internal tooling to automate deployment of laptops for new hires
+
+• Troubleshooted wired and wireless network performance issues
+"""
+
+      [params.experience.items.featuredLink]
+      enable = false
+      url = "https://example.com"
+
+      [params.experience.items.info]
+      enable = true
+      content = "Worked here for 5 months until Everlight offered me my old position back with double the pay"
+
+    [[params.experience.items]]
+    job = "XM Tech Support Specialist"
+    company = "Everlight Solar"
+    companyUrl = "https://everlightsolar.com/"
+    date = "Aug 2019 - Aug 2020"
+    content = """
+• Created and maintained Qualtrics surveys for our customer base to measure satisfaction and engagement
+
+• Acted as internal tech support for the company’s sales and recruitment teams
+
+• Administered AWS cloud infrastructure and wrote Python scripts to handle data syncing when needed
 """
 
       [params.experience.items.featuredLink]
@@ -155,84 +180,25 @@ cleebed all over
 
       [params.experience.items.info]
       enable = false
-      content = "Worked here for 5 months until Everlight offered me my old position back with double the pay"
-
-    [[params.experience.items]]
-    job = "UI/UX Designer"
-    company = "Netflix"
-    companyUrl = "https://example.com"
-    date = "June 2017 - Nov 2019"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-    [[params.experience.items]]
-    job = "Product Designer"
-    company = "Google"
-    companyUrl = "https://example.com"
-    date = "Feb 2016 - Mar 2017"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      content = "This is a remote position."
 
   [params.education]
   enable = true
   index = false
 
     [[params.education.items]]
-    title = "Master of Business Administration"
-    date = "2013 - 2015"
-    GPA = "3.8 out of 5.0"
+    title = "BS Cybersecurity and Information Assurance"
+    date = "2021 - expected Sept 2024"
+    # GPA = "3.8 out of 5.0"
     content = """
-Extracurricular Activities
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
+I originally began my bachelors in Computer Engineering at Utah State University, but halfway through my needs changed and I began working full-time. I am finishing up my degree at WGU in my evenings."""
 
       [params.education.items.school]
-      name = "University of California, Berkeley"
-      url = "https://example.org"
-
-    [[params.education.items]]
-    title = "Bachelor of Science in Computer Science"
-    date = "2009 - 2013"
-    GPA = "3.9 out of 5.0"
-    content = """
-I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-- [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-- Face mask detection using a single convolutional neural network.
-
-Extracurricular Activities
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
-
-      [params.education.items.school]
-      name = "Massachusetts Institute of Technology"
-      url = "https://example.org"
-
-      [params.education.items.featuredLink]
-      enable = true
-      name = "My academic record"
-      url = "https://example.com"
-
-    [[params.education.items]]
-    title = "High School"
-    GPA = "4.2 out of 5.0"
-
-      [params.education.items.school]
-      name = "Thomas Jefferson High School for Science and Technology."
-      url = "https://example.org"
-
-      [params.education.items.featuredLink]
-      enable = true
-      url = "https://example.com"
+      name = "Western Governors University"
+      url = "https://wgu.edu"
 
   [params.achievements]
-  enable = true
+  enable = false
 
     [[params.achievements.items]]
     title = "Google kickstart runner"
@@ -264,60 +230,60 @@ Extracurricular Activities
   enable = true
 
     [[params.projects.items]]
-    title = "Hugo Profile"
-    content = "A highly customizable and mobile first Hugo template for personal portfolio and blog."
-    image = "/images/projects/profile.png"
-    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+    title = "GitOps Kubernetes Homelab"
+    content = "I run my homelab using kubernetes with flux, longhorn, sops, etc."
+    image = "/images/k8s-homelab.png"
+    badges = [ "YAML", "Go", "Kubernetes" ]
+
+      # [params.projects.items.featured]
+      # name = "Demo"
+      # link = "https://hugo-profile.netlify.app"
+
+      # [[params.projects.items.links]]
+      # icon = "fa fa-envelope"
+      # url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/cschmittiey/k8s-homelab"
+
+      # [[params.projects.items.links]]
+      # icon = "fab fa-twitter"
+      # url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+    [[params.projects.items]]
+    title = "AI Radio Transcription"
+    content = "A simple python app to transcribe audio from trunked radio systems like PSERN using NVIDIA and OpenAI ASR models locally."
+    image = "/images/100p.jpg"
+    badges = [ "Python", "Whisper", "Canary" ]
 
       [params.projects.items.featured]
       name = "Demo"
-      link = "https://hugo-profile.netlify.app"
-
-      [[params.projects.items.links]]
-      icon = "fa fa-envelope"
-      url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+      link = "https://discord.gg/DcGJX9hRwB"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = "https://github.com/gurusabarish/hugo-profile"
-
-      [[params.projects.items.links]]
-      icon = "fab fa-twitter"
-      url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+      url = "https://github.com/cschmittiey/simple-tr-transcription"
 
     [[params.projects.items]]
-    title = "Image Converter"
-    content = "A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django."
-    image = "/images/projects/converter.jpg"
-    badges = [ "Django", "Bootstrap" ]
+    title = "Open Ham Wiki"
+    content = "An open respository for all things amateur radio, including guides, tutorials, and links to other resources."
+    image = "/images/openham_logo.png"
+    badges = [ "MediaWiki", "Docker Compose" ]
 
       [params.projects.items.featured]
-      name = "Demo"
-      link = "https://django-converter.herokuapp.com"
+      name = "Wiki"
+      link = "https://openham.wiki/index.php/Main_Page"
 
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = "https://github.com/gurusabarish/converter"
-
-    [[params.projects.items]]
-    title = "Hugo Profile V2"
-    content = "A clean and simple Hugo template for personal portfolio and blog."
-    image = "/images/projects/profile2.jpg"
-    badges = [ "Hugo", "Bootstrap", "Javascript" ]
-
-      [params.projects.items.featured]
-      name = "Demo V2"
-      link = "https://hugo-profile-2.netlify.app"
-
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = "https://github.com/gurusabarish/HugoProfileV2"
+      # [[params.projects.items.links]]
+      # icon = "fab fa-github"
+      # url = "https://github.com/gurusabarish/HugoProfileV2"
 
   [params.contact]
   enable = true
-  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-  btnName = "Mail me"
-  btnLink = "mailto:gurusabarisha@gmail.com"
+  content = "Whether you want to simply say hello or you have a project in mind, I'd love to hear from you."
+  btnName = "send me electronic mail"
+  btnLink = "mailto:cleeb+websitebutton@cleeb.net"
 
 [params.footer.recentPosts]
 path = "blogs"
@@ -327,11 +293,11 @@ enable = true
 disableFeaturedImage = false
 
 [params.footer.socialNetworks]
-github = "https://github.com"
-linkedin = "https://linkedin.com"
-twitter = "https://twitter.com"
-instagram = "https://instagram.com"
-facebook = "https://facebook.com"
+github = "https://github.com/cschmittiey"
+linkedin = "https://linkedin.com/in/caleb-d-smith"
+twitter = "https://twitter.com/cleebian"
+# instagram = "https://instagram.com"
+# facebook = "https://facebook.com"
 
   [params.listPages]
   disableFeaturedImage = false
@@ -352,7 +318,7 @@ facebook = "https://facebook.com"
   [params.terms]
   read = "Read"
   toc = "Table Of Contents"
-  copyright = "All rights reserved"
+  copyright = "cleeb, all rights reserved"
   pageNotFound = "Page not found"
   emailText = "Check out this site"
 
