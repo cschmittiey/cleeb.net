@@ -112,7 +112,7 @@ Even better, I'm still within my $10 budget! I'm so close to the top and I just 
 
 The L40S instance is still the best bang for buck I got, and the best hashrate as well. I've also tried 10X 4070Ti Super and 8x A6000 Ada instances but nothing has compared to the performance of the L40S. Huge thanks to whoever it is in Turkey hosting these things for so cheap!
 
-### The Battle for 100th
+## The Battle for 100th
 
 At this point, ████ mentions they are wanting to try a different challenge, one that isn't so necessarily dependent on fast gpus and hardware. I decide to keep chasing 1st, so I'll let ████ tell you all about it. 
 
