@@ -3,7 +3,7 @@ title = 'SHAllengers - working for the lowest SHA256 hash'
 date = 2024-06-21T15:27:47-07:00
 draft = true
 +++
-
+## the SHAllenge
 There I was, browsing Hacker News on a Tuesday afternoon, bored. All of a sudden, I chance upon [a post that catches my eye](https://news.ycombinator.com/item?id=40683564). No prizes, no end in sight, just generating hashes for fun and a silly leaderboard. Plus, it generates even less value than AI and Bitcoin. Of course I'm interested!
 
 Seems like the challenge is to generate the lowest SHA256 hash (i.e. starts with the most zeroes). Since I've previously done a little bit of password cracking, I have some ideas how to tackle this. But first, I just want to place on the leaderboard somehow. I blast out a message to my friends who are better programmers than I and attempt to nerd-snipe them into joining me, while I run the browser-based miner.
@@ -55,6 +55,8 @@ Speed.#1.........:  6516.3 MH/s (52.28ms) @ Accel:16 Loops:1024 Thr:256 Vec:1
 
 We're back in the game, and maybe we might even be able to reach the top!
 
+## being confronted with reality
+
 Of course this dream was short lived - other competitors were putting fixed prefixes at the beginning of their hashes on the leaderboard that showed they were using 4090s and 7900 XTXes with hashrates two or three times ours. My dreams of reaching the top are dashed for now, but just in case I get lucky, I let my 3090 run all night generating heat and noise while I'm trying to sleep. Many thanks to my beautiful wife for her patience with me this week while I've been generating hashes. I make it to 13th place overnight.
 
 ████ and I keep chatting while things run and I mention I wish i had more hardware. I briefly joke about asking my boss to let me run a GPU instance in AWS or reaching out to people I know have password cracking rigs. Then ████ asks, "what about [Vast?](https://vast.ai/)". I had heard of them before, but assumed they mostly just resold major cloud gpu instances or something. I had no idea anyone could sign up and host their GPU machines to be used. ████ mentions one of the other competitors mentioned in their comments that they were renting the 4090 they were using.
@@ -96,7 +98,7 @@ Started: Thu Jun 20 19:01:18 2024
 Stopped: Thu Jun 20 19:01:35 2024
 ```
 
-Wow! and we end up getting about 120GH/s running the patched pure kernel. an hour and 15 minutes later, we're in 9th place and rising quickly!
+Wow! and we end up getting about 120GH/s running the patched kernel. an hour and 15 minutes later, I'm in 9th place and rising quickly!
 
 ![a screenshot of me being in 9th place on the leaderboard](/images/posts/shallenge/9th.jpg)
 
@@ -104,7 +106,7 @@ at this point I just want to quickly apologize for changing usernames - didn't w
 
 After letting the vast instance run overnight and playing around with other GPUs and settings, I end up here:
 
-![a screenshot of me being in 2nd place on the leaderboard](/images/posts/shallenge/2nd.jpg)
+![a screenshot of me being in 2nd place on the leaderboard](/images/posts/shallenge/2nd.png)
 
 Even better, I'm still within my $10 budget! I'm so close to the top and I just crave that last zero, so I load vast up with more credit. I can't stop thinking about what I can do to hash faster and better utilize vast - right now i'm just manually starting the hashing jobs when the container starts, which isn't great when my instances start and stop automatically based on other people's bids for the machines I'm using.
 
