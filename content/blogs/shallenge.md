@@ -32,7 +32,7 @@ hashcat's optimized kernel:
 
 What could we be possibly doing so badly that the hashrate suffers **that** much? ████ dove back into the code while I played around with some different command line options. At one point I try `-S` which slows things down terribly but enough that hashcat pops out a helpful error message telling me that I probably need to try something else for a better hashrate, and links me to [this handy wiki page](https://hashcat.net/wiki/doku.php?id=frequently_asked_questions#how_to_create_more_work_for_full_speed). I try some things but we can't seem to get above 140MH/s. That is, until I find this in the hashcat repo next to the documentation for `-S`:
 
-##### `hashcat/docs/performance.txt`
+`hashcat/docs/performance.txt`
 ```
 Performance Notes:
 ==================
