@@ -20,12 +20,12 @@ However, there's one more pal to reach out to. They're a mysterious entity known
 
  We decided to check the performance of the unmodified kernel against what ████ wrote. 
 
-##### ████'s kernel:
+████'s kernel:
  ```bash
  Speed.#1.........:   139.1 MH/s (3.19ms) @ Accel:2048 Loops:1 Thr:32 Vec:1
 ```
 
-##### hashcat's optimized kernel:
+hashcat's optimized kernel:
  ```bash
  Speed.#1.........: 9278.9 MH/s (73.59ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
 ```
