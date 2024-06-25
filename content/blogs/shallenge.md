@@ -1,7 +1,7 @@
 +++
 title = 'SHAllengers - working for the lowest SHA256 hash'
 date = 2024-06-21T15:27:47-07:00
-draft = false
+draft = true
 +++
 ## the SHAllenge
 There I was, browsing Hacker News on a Tuesday afternoon, bored. All of a sudden, I chance upon [a post that catches my eye](https://news.ycombinator.com/item?id=40683564). No prizes, no end in sight, just generating hashes for fun and a silly leaderboard. Plus, it generates even less value than AI and Bitcoin. Of course I'm interested!
