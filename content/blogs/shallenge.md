@@ -3,7 +3,9 @@ title = 'SHAllengers - working for the lowest SHA256 hash'
 date = 2024-06-21T15:27:47-07:00
 draft = true
 +++
+
 ## the SHAllenge
+
 There I was, browsing Hacker News on a Tuesday afternoon, bored. All of a sudden, I chance upon [a post that catches my eye](https://news.ycombinator.com/item?id=40683564). No prizes, no end in sight, just generating hashes for fun and a silly leaderboard. Plus, it generates even less value than AI and Bitcoin. Of course I'm interested!
 
 Seems like the challenge is to generate the lowest SHA256 hash (i.e. starts with the most zeroes). Since I've previously done a little bit of password cracking, I have some ideas how to tackle this. But first, I just want to place on the leaderboard somehow. I blast out a message to my friends who are better programmers than I and attempt to nerd-snipe them into joining me, while I run the browser-based miner.
@@ -112,7 +114,9 @@ Even better, I'm still within my $10 budget! I'm so close to the top and I just 
 
 The L40S instance is still the best bang for buck I got, and the best hashrate as well. I've also tried 10X 4070Ti Super and 8x A6000 Ada instances but nothing has compared to the performance of the L40S. Huge thanks to whoever it is in Turkey hosting these things for so cheap!
 
+I got that far, and I'm pretty happy. Wish I could've touched first place, but oh well. what a fun challenge!
+
 ## The Battle for 100th
 
-At this point, ████ mentions they are wanting to try a different challenge, one that isn't so necessarily dependent on fast gpus and hardware. I decide to keep chasing 1st, so I'll let ████ tell you all about it. 
+As an aside, ████ came up with a cool synthetic challenge i thought might be fun mentioning - trying to compute hashes not with the aim of staying in first place, but in 100th place, the last spot on the leaderboard. I wish I had the time/energy right now to do this, I think it might be fun but I'm still working on finishing up my degree. maybe if we get a re-run of the challenge or some future ctf does something similar.
 
