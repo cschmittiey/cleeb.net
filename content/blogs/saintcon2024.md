@@ -4,7 +4,7 @@ date = 2024-10-25T11:20:30-06:00
 draft = false
 +++
 
-Hey all, at Saintcon 2024 we had a ham radio badge that needs to be flashed with custom firmware. Here's how to do it! 
+At Saintcon 2024 we had a ham radio badge that needs to be flashed with custom firmware. Here's how to do it! 
 
 Huge thanks to Ray-Man and redactd for their help in creating this awesome badge for our community!
 
