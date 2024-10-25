@@ -1,10 +1,8 @@
 +++
 title = 'SHAllengers - working for the lowest SHA256 hash'
 date = 2024-06-21T15:27:47-07:00
-draft = true
+draft = false
 +++
-
-## the SHAllenge
 
 There I was, browsing Hacker News on a Tuesday afternoon, bored. All of a sudden, I chance upon [a post that catches my eye](https://news.ycombinator.com/item?id=40683564). No prizes, no end in sight, just generating hashes for fun and a silly leaderboard. Plus, it generates even less value than AI and Bitcoin. Of course I'm interested!
 
@@ -119,4 +117,3 @@ I got that far, and I'm pretty happy. Wish I could've touched first place, but o
 ## The Battle for 100th
 
 As an aside, ████ came up with a cool synthetic challenge i thought might be fun mentioning - trying to compute hashes not with the aim of staying in first place, but in 100th place, the last spot on the leaderboard. I wish I had the time/energy right now to do this, I think it might be fun but I'm still working on finishing up my degree. maybe if we get a re-run of the challenge or some future ctf does something similar.
-
