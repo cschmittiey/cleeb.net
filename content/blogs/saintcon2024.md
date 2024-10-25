@@ -12,7 +12,7 @@ You'll need some kind of way to do UPDI programming. We used an [Adafruit UPDI F
 
 ## Using the Arduino IDE
 
-1. Download the Arduino IDE
+1. Download the Arduino IDE and the [firmware file](https://github.com/cschmittiey/saintcon2024-ham-radio-minibadge-arduino)
 2. Add the megaTinyCore library to the Arduino IDE. Detailed instructions [here](https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md) but the short version is:
     - Open the Arduino IDE
     - Go to File -> Preferences
@@ -28,7 +28,7 @@ You'll need some kind of way to do UPDI programming. We used an [Adafruit UPDI F
 
 ## Using Platformio
 
-While trying to do this myself at the conference, I ran into an issue where the extra repo for megatinycore had expired SSL certificates, and so I used platformio instead to flash the badge. You can find my platformio conversion of the project here. To flash the board, you'll need to install platformio core and the VS Code extension and run the following two commands to flash the badge after editing the .ino file to include your call sign:
+While trying to do this myself at the conference, I ran into an issue where the extra repo for megatinycore had expired SSL certificates, and so I used platformio instead to flash the badge. [You can find my platformio conversion of the project here](https://github.com/cschmittiey/saintcon2024-ham-radio-minibadge-platformio). To flash the board, you'll need to install platformio core and the VS Code extension and run the following two commands to flash the badge after editing the .ino file to include your call sign:
 
 ```bash
 source ~/.platformio/penv/bin/activate
